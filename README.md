@@ -24,7 +24,15 @@ Run `npm run test` to execute the test suite, located at `test/Token.js`.
 
 ### Deploying the contract
 
-Deployment is TBD.
+Deployment is currently only possible on the local network backed by hardhat. See the section below.
+
+### Connect to the local network
+
+Run `npm run node` which will launch a local network backed by hardhat and display several test wallets. The first wallet is the owner of the contract by default.
+
+After that, running `npm run deploy:local` will deploy the token on it and display the contract and owner addresses.
+
+You can then connect to the local network on which the contract is deployed on `localhost:8545` and use your preferred web3 client with any of the wallets above.
 
 ## License
 
